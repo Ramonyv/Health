@@ -8,7 +8,7 @@ const views = ['Front','Back','Side'];
 // Hotspot positions are percentages of the supplied 476 × 927 anatomy artwork.
 const organPositions: Record<string, [number, number][]> = {
   Brain:[[50,12],[50,12],[56,12]], Heart:[[45,30],[56,30],[55,30]],
-  Lungs:[[45,29],[50,29],[54,29]], Kidney:[[46,43],[48,43],[53,43]],
+  Lungs:[[45,20],[50,25],[54,23]], Kidney:[[46,43],[48,43],[53,43]],
   Intestines:[[50,49],[50,49],[55,49]], Stomach:[[44,39],[51,40],[55,39]],
   Liver:[[57,37],[55,38],[57,37]], Skin:[[63,49],[63,49],[63,49]],
   Spine:[[50,42],[50,41],[55,42]], Bladder:[[50,57],[50,57],[54,57]],
