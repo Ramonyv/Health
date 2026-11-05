@@ -21,3 +21,6 @@ h1{z-index:auto}h1 span{position:relative;z-index:3}
 /* Match the original translucent carousel tiles; larger 2X art stays in the assistant panel. */
 .organ-card img{width:74%;height:82%}
 .organ-card.selected{border:1.5px solid #db9fc9;background:#ffffff85;box-shadow:0 0 0 3px #ffffff45}
+/* Keep keyboard focus visible without a square outline inside the pill input. */
+form input:focus-visible{outline:none}
+form:focus-within{box-shadow:0 0 0 2px #a075d744}
