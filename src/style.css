@@ -7,3 +7,11 @@
 h1{z-index:auto}h1 span{position:relative;z-index:3}
 @media(min-width:1001px) and (max-width:1499px){header{height:80px}.hero{height:calc(100% - 80px)}}
 @media(min-width:641px){h1{top:22%;font-size:clamp(65px,min(10vw,18cqh),148px)}.panel-open h1{font-size:clamp(55px,min(8.3vw,15.5cqh),125px)}}
+/* The selected organ stays anchored to its location on each anatomy view. */
+.hotspot{transform:translate(-50%,-50%);padding:0;transition:left .3s ease-out,top .3s ease-out,transform .2s ease-out}
+.hotspot:hover{transform:translate(-50%,-50%) scale(1.08)}
+.hotspot-plus{display:grid;place-items:center;width:100%;height:100%;border-radius:50%}
+.hotspot.expanded{width:64px;height:108px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:6px 5px 5px;background:#ffffffb8;border:1px solid white;border-radius:40px;box-shadow:0 4px 24px #c994c844;backdrop-filter:blur(5px)}
+.hotspot.expanded .hotspot-organ{width:48px;height:48px;object-fit:contain;flex-shrink:0}
+.hotspot.expanded .hotspot-plus{width:50px;height:50px;background:white;box-shadow:0 0 0 10px #ff996d73,0 0 22px 13px #ff945e88;flex-shrink:0}
+@media(max-width:640px){.hotspot.expanded{width:52px;height:88px;padding:5px}.hotspot.expanded .hotspot-organ{width:38px;height:38px}.hotspot.expanded .hotspot-plus{width:39px;height:39px;box-shadow:0 0 0 7px #ff996d73,0 0 15px 9px #ff945e88}}
