@@ -76,3 +76,11 @@ form:focus-within{box-shadow:0 0 0 2px #a075d744}
 .panel-open .carousel{width:min(70%,660px)}
 @media(max-width:1000px){.panel-open .carousel{width:78%}}
 @media(max-width:640px){.panel-open .carousel{width:96%}}
+/* Cursor-following body-area preview. */
+.anatomy{pointer-events:auto}
+.anatomy>img{pointer-events:none}
+.anatomy-tooltip{position:absolute;z-index:7;width:154px;padding:5px 5px 11px;border-radius:22px;background:#fff;box-shadow:0 14px 36px #6f5b8a2b;pointer-events:none;overflow:hidden;text-align:center}
+.anatomy-tooltip-preview{position:relative;height:98px;overflow:hidden;border-radius:17px;background:linear-gradient(145deg,#f3edff,#fae5f3)}
+.anatomy-tooltip-preview img{position:absolute;width:240px;height:auto;max-width:none;pointer-events:none}
+.anatomy-tooltip strong{display:block;font-size:17px;line-height:1.1;font-weight:700;letter-spacing:-.035em;padding-top:10px}
+@media(max-width:640px){.anatomy-tooltip{display:none}}
