@@ -66,3 +66,6 @@ form:focus-within{box-shadow:0 0 0 2px #a075d744}
 @media(min-width:1500px){.logo{width:202px}.main-nav{height:60px}.main-nav .nav-current,.main-nav .nav-menu-button{height:40px}.main-nav .nav-label{font-size:16px}}
 @media(max-width:1000px){.main-nav{gap:0;height:44px;padding:5px}.main-nav .nav-current{height:34px;min-width:78px;font-size:11px}.main-nav .nav-label{min-width:72px;font-size:10px;padding:0 4px}.main-nav .nav-menu-button{height:34px;width:40px}.main-nav .nav-menu-button img{width:23px}}
 @media(max-width:640px){.main-nav{height:40px}.main-nav .nav-current{height:30px}.main-nav .nav-label{display:none}.main-nav .nav-menu-button{height:30px;width:35px}.main-nav .nav-menu-button img{width:20px}}
+
+/* Show the entire profile card; viewport-aware Motion scale keeps it on screen. */
+.profile-menu{max-height:none;overflow:visible}
