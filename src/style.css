@@ -17,3 +17,7 @@ h1{z-index:auto}h1 span{position:relative;z-index:3}
 @media(max-width:640px){.hotspot.expanded{width:48px;height:82px;padding:5px}.hotspot.expanded .hotspot-organ{width:36px;height:36px}.hotspot.expanded .hotspot-plus{width:32px;height:32px;box-shadow:0 0 12px 5px #ff8d56b3,0 0 22px 10px #ff9a6566}}
 
 .panel-art.animated-lungs>img{width:100%;height:100%;object-fit:cover;border-radius:23px;filter:none}
+
+/* Match the original translucent carousel tiles; larger 2X art stays in the assistant panel. */
+.organ-card img{width:74%;height:82%}
+.organ-card.selected{border:1.5px solid #db9fc9;background:#ffffff85;box-shadow:0 0 0 3px #ffffff45}
