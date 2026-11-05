@@ -3,6 +3,9 @@ import {createRoot} from 'react-dom/client';
 import {AnimatePresence,motion,MotionConfig,useReducedMotion} from 'motion/react';
 import {ChevronDown,ChevronLeft,ChevronRight,Plus,X,Info,Wind,Activity} from 'lucide-react';
 import {organs,type Organ} from './organs';
+import '@fontsource/manrope/latin-400.css';
+import '@fontsource/manrope/latin-600.css';
+import '@fontsource/manrope/latin-700.css';
 import './style.css';
 const views = ['Front','Back','Side'];
 // Hotspot positions are percentages of the supplied 476 × 927 anatomy artwork.

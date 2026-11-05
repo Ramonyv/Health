@@ -36,3 +36,7 @@ form:focus-within{box-shadow:0 0 0 2px #a075d744}
 @media(max-width:640px){.profile-menu{right:-4px;width:min(304px,calc(100vw - 32px));max-height:calc(100svh - 90px)}}
 
 .profile-actions button>img{width:16px;height:16px;flex:none}.profile-actions button>img.trailing{margin-left:auto}.profile-actions button>span img{width:16px;height:16px}.profile-social{display:flex;align-items:center;gap:13px;margin-left:auto}.profile-social img{width:18px;height:18px;object-fit:contain}
+
+/* Match the Figma menu's Manrope type and reduce its on-screen scale. */
+.profile-menu{transform:scale(.78);transform-origin:top right}
+.profile-identity strong,.profile-credits strong{font-weight:600}
