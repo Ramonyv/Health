@@ -72,3 +72,7 @@ form:focus-within{box-shadow:0 0 0 2px #a075d744}
 
 /* Fill the illustration slot at wide, short desktop sizes. */
 .panel-art{width:100%;max-height:none}
+/* Preserve the same organ-card scale in both explorer states. */
+.panel-open .carousel{width:min(70%,660px)}
+@media(max-width:1000px){.panel-open .carousel{width:78%}}
+@media(max-width:640px){.panel-open .carousel{width:96%}}
