@@ -69,3 +69,6 @@ form:focus-within{box-shadow:0 0 0 2px #a075d744}
 
 /* Show the entire profile card; viewport-aware Motion scale keeps it on screen. */
 .profile-menu{max-height:none;overflow:visible}
+
+/* Fill the illustration slot at wide, short desktop sizes. */
+.panel-art{width:100%;max-height:none}
