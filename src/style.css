@@ -84,3 +84,18 @@ form:focus-within{box-shadow:0 0 0 2px #a075d744}
 .anatomy-tooltip-preview img{position:absolute;width:240px;height:auto;max-width:none;pointer-events:none}
 .anatomy-tooltip strong{display:block;font-size:17px;line-height:1.1;font-weight:700;letter-spacing:-.035em;padding-top:10px}
 @media(max-width:640px){.anatomy-tooltip{display:none}}
+/* The menu grows from a compact control into the full Figma navigation pill. */
+.main-nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);justify-content:flex-end;gap:0;overflow:hidden;box-shadow:0 9px 24px #00000010}
+.main-nav .nav-items{min-width:0;flex:1;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.main-nav .nav-current{flex:none}
+.main-nav .nav-label{flex:1;min-width:0;padding:0 2px}
+.main-nav .nav-menu-button{flex:none}
+.nav-lines{width:29.5px;height:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.nav-lines i{display:block;width:29.5px;height:2px;background:#fff;border-radius:3px;transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.main-nav.is-expanded .nav-lines i:first-child{transform:translateY(3.5px) rotate(45deg)}
+.main-nav.is-expanded .nav-lines i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+@media(max-width:1000px){.nav-lines,.nav-lines i{width:23px}.main-nav .nav-label{min-width:0}}
+@media(max-width:640px){.main-nav.is-expanded{z-index:40}.main-nav .nav-label{display:block;min-width:0;flex:1;font-size:9px}.main-nav .nav-current{min-width:72px;padding:0 8px}.main-nav .nav-menu-button{width:35px}.nav-lines,.nav-lines i{width:20px}}
+@media(prefers-reduced-motion:reduce){.nav-lines i{transition:none}}
+.main-nav{padding-left:8px;padding-right:8px}
+.nav-lines{padding:0}
