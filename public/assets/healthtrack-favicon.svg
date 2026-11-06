@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="8" fill="url(#paint0_radial_423_508)"/>
+<path d="M11.3287 10.642L9.3516 8.80454C10.2006 8.324 10.9002 7.6157 11.3499 6.74905C13.2521 3.08365 18.7479 3.08365 20.6501 6.74905C20.7566 6.95439 20.8772 7.15085 21.0105 7.33749L19.2512 9.8501C17.4544 12.4163 13.6472 12.7968 11.3287 10.642Z" fill-rule="evenodd" clip-rule="evenodd" fill="white" style="fill:white;fill-opacity:1;"/>
+<path d="M8.52744 19.033L6.00682 20.2894C5.7872 19.3775 5.29619 18.5303 4.57164 17.8587C1.49393 15.0055 3.19225 10.0346 7.44554 9.44684C7.71467 9.40965 7.97798 9.35277 8.23356 9.27753L10.1837 11.6225C12.1947 14.0406 11.3988 17.6018 8.52744 19.033Z" fill-rule="evenodd" clip-rule="evenodd" fill="white" style="fill:white;fill-opacity:1;"/>
+<path d="M16.053 24.1596L16.5404 26.8829C15.5354 26.7828 14.5067 26.9627 13.587 27.4226C9.7827 29.3246 5.33644 26.2524 6.06299 22.2238C6.11038 21.961 6.13494 21.6973 6.13747 21.4352L9.15411 20.3716C12.1938 19.2999 15.5091 21.1203 16.053 24.1596Z" fill-rule="evenodd" clip-rule="evenodd" fill="white" style="fill:white;fill-opacity:1;"/>
+<path d="M23.5053 18.9371L26.3356 19.3317C25.9052 20.2233 25.7578 21.2298 25.937 22.2238C26.6636 26.2524 22.2173 29.3246 18.413 27.4226C18.1878 27.31 17.9561 27.2142 17.7198 27.1351L17.5853 24.0065C17.4529 20.926 20.2978 18.4899 23.5053 18.9371Z" fill-rule="evenodd" clip-rule="evenodd" fill="white" style="fill:white;fill-opacity:1;"/>
+<path d="M20.5855 10.5827L21.816 8.21914C22.5698 8.86928 23.5191 9.30376 24.5545 9.44684C28.8078 10.0346 30.5061 15.0055 27.4284 17.8587C27.2637 18.0113 27.1112 18.1729 26.9711 18.3424L23.8257 17.5038C20.7042 16.6717 19.1471 13.3457 20.5855 10.5827Z" fill-rule="evenodd" clip-rule="evenodd" fill="white" style="fill:white;fill-opacity:1;"/>
+<defs>
+<radialGradient id="paint0_radial_423_508" cx="0" cy="0" r="1" gradientTransform="matrix(22.8125 24.8086 -24.6312 33.7469 5.98828 4.84766)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F0B4D3" style="stop-color:#F0B4D3;stop-color:color(display-p3 0.9412 0.7059 0.8275);stop-opacity:1;"/>
+<stop offset="0.384645" stop-color="#E45668" style="stop-color:#E45668;stop-color:color(display-p3 0.8941 0.3373 0.4078);stop-opacity:1;"/>
+<stop offset="0.692322" stop-color="#A069E0" style="stop-color:#A069E0;stop-color:color(display-p3 0.6275 0.4118 0.8784);stop-opacity:1;"/>
+<stop offset="0.846161" stop-color="#65A6F6" style="stop-color:#65A6F6;stop-color:color(display-p3 0.3961 0.6510 0.9647);stop-opacity:1;"/>
+<stop offset="1" stop-color="#EC933F" style="stop-color:#EC933F;stop-color:color(display-p3 0.9255 0.5765 0.2471);stop-opacity:1;"/>
+</radialGradient>
+</defs>
+</svg>
