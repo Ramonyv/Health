@@ -26,6 +26,15 @@ form input:focus-visible{outline:none}
 form:focus-within{box-shadow:0 0 0 2px #a075d744}
 /* Figma profile dropdown */
 .profile-wrap{z-index:30}
+.language-wrap{position:relative;z-index:31;margin-left:auto;margin-right:8px;font-family:Manrope,Arial,sans-serif}
+.language-button{height:32px;display:flex;align-items:center;gap:5px;padding:0 9px;border:1px solid #edbedb;border-radius:8px;background:#fff;font-size:11px;font-weight:700}
+.language-menu{position:absolute;top:calc(100% + 10px);right:0;width:230px;max-height:min(460px,calc(100svh - 100px));overflow:auto;padding:8px;background:#fff;border:1px solid #eee8f4;border-radius:18px;box-shadow:0 14px 40px #5b49632e}
+.language-menu p{margin:5px 8px 8px;color:#776b82;font-size:11px;font-weight:700}
+.language-menu button{width:100%;min-height:35px;padding:6px 9px;display:flex;align-items:center;justify-content:space-between;border-radius:9px;background:transparent;text-align:left;font-size:12px}
+.language-menu button:hover,.language-menu button[aria-current=true]{background:#f5f1fb}
+.language-menu small{display:block;margin:7px 8px 5px;color:#817889;font-size:10px;line-height:1.4}
+.message .translate-answer{display:inline-block;margin-top:8px;color:#75559a;font-size:11px;font-weight:600;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:640px){.language-wrap{margin-right:0}.language-button{width:33px;justify-content:center;padding:0}.language-button span,.language-button svg:last-child{display:none}.language-menu{right:-58px;width:min(230px,calc(100vw - 30px))}}
 .profile-menu{position:absolute;top:calc(100% + 12px);right:0;width:304px;max-height:calc(100svh - 105px);overflow-y:auto;overscroll-behavior:contain;background:#fff;border:1px solid #0000001a;border-radius:24px;padding:4px;box-shadow:0 19px 30px #00000008,0 5px 10px #0000000d;font-family:Manrope,Arial,sans-serif;font-size:13px;scrollbar-width:thin}
 .profile-cover{display:block;color:inherit;text-decoration:none;position:relative;width:100%;height:162px;overflow:hidden;border-radius:18px;background:#e0d5fa}
 .profile-orbit{position:absolute;pointer-events:none}.profile-orbit.outer{width:310px;height:310px;left:-9px;top:15px}.profile-orbit.inner{width:196px;height:196px;left:48px;top:72px}.profile-portrait{position:absolute;width:194px;height:194px;object-fit:cover;left:50px;top:0}
@@ -109,5 +118,6 @@ form:focus-within{box-shadow:0 0 0 2px #a075d744}
 .profile-footer>a,.profile-social a{color:inherit;text-decoration:none;padding:0;background:transparent;font-size:inherit;font-weight:inherit}.profile-social a{display:grid;place-items:center}
 .profile-menu a:focus-visible{outline:2px solid #a075d7;outline-offset:2px}
 .message,.followup{font-size:14px;font-weight:400}
+.message .source-link{font-size:8px;letter-spacing:.08em;color:#9b7ca8}
 @media(max-width:640px){.app aside.assistant{height:min(70svh,660px);max-height:calc(100svh - 16px);min-width:0}.app .assistant .panel-art{height:150px;max-height:150px;min-height:0;flex:0 0 150px;aspect-ratio:auto;overflow:hidden}.app .assistant .panel-content{min-width:0;overflow-x:hidden}.app .assistant .panel-content a,.app .assistant .message{overflow-wrap:anywhere}.app .assistant .chat-bottom{min-width:0}.app .assistant .chat-composer-card{max-width:100%}.app .assistant .chat-composer-card input,.app .assistant .chat-composer-card.is-plain input,.app .assistant .visit-note-body textarea{font-size:16px}}
 @media(max-width:640px){.app aside.assistant.keyboard-active{position:fixed;top:auto;bottom:var(--keyboard-bottom);left:8px;right:8px;width:auto;height:calc(var(--keyboard-height) - 8px);max-height:none;z-index:50}.app .assistant.keyboard-active .panel-art{display:none}.assistant.keyboard-active.composer-focused .panel-content h2,.assistant.keyboard-active.composer-focused .symptoms,.assistant.keyboard-active.composer-focused .visit-note,.assistant.keyboard-active.composer-focused .nutrition-section{display:none}}

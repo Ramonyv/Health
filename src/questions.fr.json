@@ -1,0 +1,19 @@
+{
+"Brain":["Comment fonctionne le cerveau ?","Que savoir sur les maux de tête ?","Qu'est-ce qui peut affecter la concentration ?","Que sont les étourdissements ?"],
+"Heart":["Quel est le rôle du cœur ?","Qu'est-ce qu'un battement rapide ?","Que signifie une gêne thoracique ?","Qu'est-ce que la fatigue ?"],
+"Lungs":["Quel est le rôle des poumons ?","Qu'est-ce que la toux ?","Que peuvent signifier les sifflements ou l'oppression thoracique ?","Qu'est-ce que l'essoufflement ?"],
+"Kidney":["Quel est le rôle des reins ?","Que signifient les changements urinaires ?","Qu'est-ce qui peut causer une douleur sur le côté ?","Pourquoi un gonflement peut-il compter ?"],
+"Intestines":["Quel est le rôle des intestins ?","Que sont les ballonnements ?","Que sont les changements du transit ?","Que peut signifier une gêne abdominale ?"],
+"Stomach":["Quel est le rôle de l'estomac ?","Qu'est-ce que la nausée ?","Qu'est-ce que l'indigestion ?","Que signifie être vite rassasié ?"],
+"Liver":["Quel est le rôle du foie ?","Que peut signifier une gêne abdominale ?","Que signifie une perte d'appétit ?","Que savoir sur la fatigue ?"],
+"Skin":["Quel est le rôle de la peau ?","Que savoir sur la peau sèche ?","Que sont les démangeaisons ?","Que signifie une rougeur ?"],
+"Spine":["Quel est le rôle de la colonne vertébrale ?","Qu'est-ce que le mal de dos ?","Que signifie une raideur du dos ?","Pourquoi bouger peut-il devenir difficile ?"],
+"Bladder":["Quel est le rôle de la vessie ?","Qu'est-ce qu'une miction fréquente ?","Que signifie une gêne de la vessie ?","Qu'est-ce qu'une envie pressante d'uriner ?"],
+"Knee":["Comment fonctionne le genou ?","Que signifie une raideur articulaire ?","Que savoir sur le gonflement du genou ?","Pourquoi le mouvement fait-il mal ?"],
+"Head":["Quelles structures se trouvent dans la tête ?","Qu'est-ce qu'une pression dans la tête ?","Que peut signifier une gêne du visage ?","Qu'est-ce qu'une céphalée de tension ?"],
+"Eye":["Comment prendre soin de mes yeux ?","Que savoir sur les yeux secs ?","Qu'est-ce que la fatigue visuelle ?","Que signifie une irritation des yeux ?"],
+"Ear":["Comment fonctionne l'oreille ?","Que signifie une gêne de l'oreille ?","Que sont les acouphènes ?","Que signifie une sensation d'oreille bouchée ?"],
+"Throat":["Quel est le rôle de la gorge ?","Quelles sont les causes du mal de gorge ?","Qu'est-ce que l'enrouement ?","Que faire si avaler est difficile ?"],
+"Tooth":["Comment prendre soin de mes dents ?","Que signifie une sensibilité dentaire ?","Quelles sont les causes d'une douleur dentaire ?","Que savoir sur l'irritation des gencives ?"],
+"Shoulder":["Comment fonctionne l'épaule ?","Que signifie une raideur de l'épaule ?","Pourquoi soulever le bras fait-il mal ?","Que faire si l'épaule bouge moins ?"]
+}
