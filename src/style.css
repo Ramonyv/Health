@@ -95,17 +95,58 @@ form:focus-within{box-shadow:0 0 0 2px #a075d744}
 @media(max-width:640px){.anatomy-tooltip{display:none}}
 /* The menu grows from a compact control into the full Figma navigation pill. */
 .main-nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);justify-content:flex-end;gap:0;overflow:hidden;box-shadow:0 9px 24px #00000010}
-.main-nav .nav-items{min-width:0;flex:1;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.main-nav .nav-items{min-width:0;flex:1;display:flex;align-items:center;justify-content:flex-start;gap:4px}
 .main-nav .nav-current{flex:none}
 .main-nav .nav-label{flex:1;min-width:0;padding:0 2px}
 .main-nav .nav-menu-button{flex:none}
 .nav-lines{width:29.5px;height:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
-.nav-lines i{display:block;width:29.5px;height:2px;background:#fff;border-radius:3px;transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.nav-lines i{display:block;width:29.5px;height:2px;background:#fff;border-radius:3px;transition:transform .2s cubic-bezier(.22,1,.36,1)}
 .main-nav.is-expanded .nav-lines i:first-child{transform:translateY(3.5px) rotate(45deg)}
 .main-nav.is-expanded .nav-lines i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
 @media(max-width:1000px){.nav-lines,.nav-lines i{width:23px}.main-nav .nav-label{min-width:0}}
 @media(max-width:640px){.main-nav.is-expanded{z-index:40}.main-nav .nav-label{display:block;min-width:0;flex:1;font-size:9px}.main-nav .nav-current{min-width:72px;padding:0 8px}.main-nav .nav-menu-button{width:35px}.nav-lines,.nav-lines i{width:20px}}
 @media(prefers-reduced-motion:reduce){.nav-lines i{transition:none}}
+
+.main-nav .nav-current,.main-nav .nav-branding{display:grid;place-items:center;text-decoration:none;white-space:nowrap}
+.branding-page .main-nav .nav-current{background:transparent;color:#ffffff80}
+.main-nav .nav-branding{color:#fff;font-size:13px;font-weight:650;padding:0 12px}
+.main-nav .nav-branding[aria-current=page]{background:#fff;color:#050505;border-radius:100px;height:38px}
+.branding-page{min-height:100svh;background:#faf9ff;border-radius:24px;overflow:hidden}
+.branding-page header{height:112px}
+.branding-page .main-nav{position:absolute;left:50%;transform:translate(-50%,-50%)}
+.branding-main{max-width:1600px;margin:0 auto;padding:25px 3% 36px}
+.branding-actions{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;margin-bottom:50px}
+.branding-back{grid-column:2;width:max-content;display:flex;align-items:center;gap:9px;padding:6px 15px 6px 6px;border-radius:100px;background:#050505;color:white;text-decoration:none;font-size:11px;font-weight:700}
+.branding-back span{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:white;color:#111}
+.branding-connect{grid-column:3;justify-self:end;display:flex;align-items:center;gap:8px}
+.branding-contact,.branding-social{display:flex;align-items:center;gap:9px;min-height:40px;padding:0 18px;border-radius:100px;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 8px 24px #21172f18;transition:transform .2s cubic-bezier(.22,1,.36,1),box-shadow .2s ease}
+.branding-contact{background:#050505;color:#fff}
+.branding-social{background:#fff;color:#050505;border:1px solid #ece8f2}
+.branding-social img{width:15px;height:15px}
+.branding-contact:hover,.branding-social:hover{transform:translateY(-2px);box-shadow:0 12px 30px #21172f26}
+.branding-contact:focus-visible,.branding-social:focus-visible{outline:2px solid #a075d7;outline-offset:4px}
+.branding-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.branding-tile{aspect-ratio:1;background:#f2eef9;border-radius:20px;display:grid;place-items:center;overflow:hidden}
+.branding-image{width:100%;height:100%;display:grid;place-items:center;position:relative}
+.branding-image>img{width:100%;height:100%;object-fit:cover}
+.branding-placeholder{display:none;flex-direction:column;align-items:center;gap:20px;color:#b7aeca;font-size:13px}
+.branding-placeholder img{width:min(45%,160px);opacity:.3}
+.branding-image.is-pending .branding-placeholder{display:flex}
+@media(max-width:700px){.branding-page header{height:80px}.branding-main{padding:25px 18px}.branding-actions{grid-template-columns:1fr;justify-items:center;gap:12px;margin-bottom:32px}.branding-back,.branding-connect{grid-column:1;justify-self:center}.branding-connect{flex-wrap:wrap;justify-content:center}.branding-grid{gap:14px}.branding-tile{border-radius:15px}.branding-placeholder{font-size:10px;gap:10px}}
+@media(max-width:480px){.branding-grid{grid-template-columns:1fr}.branding-page .main-nav{left:auto;right:76px;transform:none}.branding-page .logo{width:125px}}
+
+/* Keep the navigation anchored while page content changes in place. */
+header>a:first-child{view-transition-name:healthtrack-logo}
+.main-nav{view-transition-name:healthtrack-navigation}
+.profile-wrap{view-transition-name:healthtrack-profile}
+.hero,.branding-main{view-transition-name:healthtrack-page}
+::view-transition-old(root),::view-transition-new(root){animation:none}
+::view-transition-group(healthtrack-logo),::view-transition-group(healthtrack-navigation),::view-transition-group(healthtrack-profile){animation-duration:.42s;animation-timing-function:cubic-bezier(.22,1,.36,1)}
+::view-transition-old(healthtrack-page){animation:healthtrack-page-out .18s ease both}
+::view-transition-new(healthtrack-page){animation:healthtrack-page-in .42s cubic-bezier(.22,1,.36,1) both}
+@keyframes healthtrack-page-out{to{opacity:0;transform:translateY(-8px);filter:blur(3px)}}
+@keyframes healthtrack-page-in{from{opacity:0;transform:translateY(12px);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}
+@media(prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation-duration:0s!important}}
 .panel-content{scrollbar-width:thin;scrollbar-color:#b8b6bd transparent}.panel-content::-webkit-scrollbar{width:6px}.panel-content::-webkit-scrollbar-track{background:transparent}.panel-content::-webkit-scrollbar-thumb{background:#b8b6bd;border-radius:999px}.panel-content::-webkit-scrollbar-thumb:hover{background:#8d8a95}
 .chat-bottom{padding:6px 4px 4px}.chat-composer-card{border:1px solid transparent;border-radius:29px;background:linear-gradient(110deg,#fbf3f9,#f6f1fc 65%,#eff3ff) padding-box,linear-gradient(115deg,#f052a1,#a478f6 75%,#ff9b4d) border-box;padding:8px}.nearby-prompt{display:flex;align-items:center;width:max-content;max-width:100%;min-height:37px;margin-bottom:9px;padding:2px 5px 2px 3px;border:2px solid #fff;border-radius:999px;background:#ffffff91}.nearby-doctors{display:flex;align-items:center;gap:9px;min-width:0;color:#16111b;text-decoration:none;font-size:11px;white-space:nowrap}.nearby-doctors:focus-visible,.nearby-dismiss:focus-visible{outline:2px solid #a075d7;outline-offset:2px}.nearby-doctors:hover strong{text-decoration-thickness:2px}.doctor-portraits{display:flex;flex-shrink:0;align-items:center;padding-left:2px}.doctor-portraits img{width:30px;height:30px;object-fit:cover;border:2px solid white;border-radius:50%;background:#ebe5f4}.doctor-portraits img+img{margin-left:-9px}.nearby-label{overflow:hidden;text-overflow:ellipsis}.nearby-label strong{font-weight:650;text-decoration:underline;text-underline-offset:2px}.nearby-dismiss{width:23px;height:23px;flex-shrink:0;display:grid;place-items:center;margin-left:5px;padding:0;border-radius:50%;background:white;box-shadow:0 1px 2px #493b501a}.chat-composer-card form{min-height:51px;border:2px solid transparent;border-radius:27px;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(100deg,#e052a0,#b586f7 73%,#f9a256) border-box;padding:4px 5px 4px 7px}.chat-composer-card input{font-size:13px}.chat-composer-card form button,.chat-composer-card form button img{width:41px;height:41px}@media(max-width:640px){.chat-composer-card{border-radius:26px;padding:7px}.nearby-doctors{font-size:10px}.doctor-portraits img{width:27px;height:27px}.chat-composer-card form{min-height:48px}.chat-composer-card form button,.chat-composer-card form button img{width:38px;height:38px}}
 .chat-composer-card.is-plain{border:0;border-radius:0;background:none;padding:0}.chat-composer-card.is-plain form{min-height:0;border:1px solid transparent;border-radius:40px;background:linear-gradient(white,white) padding-box,linear-gradient(100deg,#ff759e,#ad8aff,#ffc680) border-box;padding:4px}.chat-composer-card.is-plain input{font-size:12px}.chat-composer-card.is-plain form button,.chat-composer-card.is-plain form button img{width:35px;height:35px}
